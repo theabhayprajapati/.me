@@ -1,7 +1,7 @@
 ---
-title: 'Lyrixfy'
+title: 'Better UTS App'
 publishedAt: '2022-09-22'
-description: 'Tool for bringing the meaning of lyrics 🎶'
+description: 'Redesign UTS App 🎶'
 preview: 'https://lyrixfy.com/'
 owner: 'ivenuss'
 repo: 'lyrixfy'

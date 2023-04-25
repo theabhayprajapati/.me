@@ -1,91 +1,86 @@
 import type { ComponentType } from 'svelte';
 
-import CDN77Logo from '$lib/images/cdn77.svg?component';
-import SeznamLogo from '$lib/images/seznam.svg?component';
 
+import AiMageLogo from '$lib/components/svg/icons/aimagelight.svg';
+import BehanceIcon from '$lib/components/svg/icons/behance.svg?component';
 import CSSIcon from '$lib/components/svg/icons/css.svg?component';
-import HTMLIcon from '$lib/components/svg/icons/html.svg?component';
-import TypeScriptIcon from '$lib/components/svg/icons/typescript.svg?component';
-import NodeJSIcon from '$lib/components/svg/icons/nodejs.svg?component';
-import ReactIcon from '$lib/components/svg/icons/react.svg?component';
-import JavaScriptIcon from '$lib/components/svg/icons/javascript.svg?component';
-import TailwindCSSIcon from '$lib/components/svg/icons/tailwindcss.svg?component';
-import NextJSIcon from '$lib/components/svg/icons/nextjs.svg?component';
-import VSCIcon from '$lib/components/svg/icons/vsc.svg?component';
-import NestJSIcon from '$lib/components/svg/icons/nestjs.svg?component';
 import FigmaIcon from '$lib/components/svg/icons/figma.svg?component';
-import GraphQLIcon from '$lib/components/svg/icons/graphql.svg?component';
-import PrismaIcon from '$lib/components/svg/icons/prisma.svg?component';
-import LinuxIcon from '$lib/components/svg/icons/linux.svg?component';
-import SvelteIcon from '$lib/components/svg/icons/svelte.svg?component';
 import GitIcon from '$lib/components/svg/icons/git.svg?component';
-import JestIcon from '$lib/components/svg/icons/jest.svg?component';
-import PhotoshopIcon from '$lib/components/svg/icons/photoshop.svg?component';
+import GitHubIcon from '$lib/components/svg/icons/github.svg?component';
+import GraphQLIcon from '$lib/components/svg/icons/graphql.svg?component';
+import HTMLIcon from '$lib/components/svg/icons/html.svg?component';
 import IllustratorIcon from '$lib/components/svg/icons/illustrator.svg?component';
 import InDesignIcon from '$lib/components/svg/icons/indesign.svg?component';
+import JavaScriptIcon from '$lib/components/svg/icons/javascript.svg?component';
+import JestIcon from '$lib/components/svg/icons/jest.svg?component';
 import LinkedInIcon from '$lib/components/svg/icons/linkedin.svg?component';
+import LinuxIcon from '$lib/components/svg/icons/linux.svg?component';
+import NestJSIcon from '$lib/components/svg/icons/nestjs.svg?component';
+import NextJSIcon from '$lib/components/svg/icons/nextjs.svg?component';
+import NodeJSIcon from '$lib/components/svg/icons/nodejs.svg?component';
+import PhotoshopIcon from '$lib/components/svg/icons/photoshop.svg?component';
+import PrismaIcon from '$lib/components/svg/icons/prisma.svg?component';
+import ReactIcon from '$lib/components/svg/icons/react.svg?component';
+import SaladLogo from '$lib/components/svg/icons/saladlogo.svg';
+import SvelteIcon from '$lib/components/svg/icons/svelte.svg?component';
+import TailwindCSSIcon from '$lib/components/svg/icons/tailwindcss.svg?component';
 import TwitterIcon from '$lib/components/svg/icons/twitter.svg?component';
-import GitHubIcon from '$lib/components/svg/icons/github.svg?component';
-import BehanceIcon from '$lib/components/svg/icons/behance.svg?component';
-
+import TypeScriptIcon from '$lib/components/svg/icons/typescript.svg?component';
+import VSCIcon from '$lib/components/svg/icons/vsc.svg?component';
+import CloneOfTwitter from '$lib/images/cloneoftwitter.png';
+import OAS from '$lib/images/oas.png';
+import UTSClone from "$lib/images/utsclone.png";
 export const SITE_URL = 'https://jakubh.com';
 export const EMAIL = 'hello@jakubh.com';
 export const PREVIEW_TRACK_COUNT = 3;
 
-export const progressTimeline = {
-	'2023': ["we'll see"],
-	'2022': [
-		'basic understanding about unit testing (Jest, React Testing Lib)',
-		'got my first job at Seznam.cz',
-		'better understanding about CI/CD workflow',
-		'have learnt new technology called tRPC',
-		'improved my Git & TypeScript skills'
-	],
-	'2021': [
-		'have learnt new BE technologies such as Nest, GraphQL and ORM (Prisma + TypeORM) and basic Linux stuff',
-		'have learnt FE technologies such as Next.js, Redux',
-		'have learnt my first CSS framework Tailwind CSS'
-	],
-	'2020': [
-		'started learning Node.js and made my first REST API with express (MERN stack)',
-		'made some simple projects with React library',
-		'introduction to frontend web dev (HTML, CSS) & made my first website'
-	],
-	'2019': ['introduction to programming']
-};
 
 export const workExperiences = [
 	{
-		companyName: 'CDN77',
-		companyLogo: CDN77Logo,
+		companyName: 'Salad Health | Wellness for Women',
+		companyLogo: SaladLogo,
 		companyColor: '#FFE115',
 		companySite: 'https://www.cdn77.com/',
-		employmentType: 'Full-time',
+		employmentType: 'Intership',
 		title: 'Frontend Developer',
-		startDate: '2023-02-15',
-		endDate: undefined
+		startDate: '2023-01-01',
+		endDate: '2023-03-31'
 	},
 	{
-		companyName: 'Seznam.cz',
-		companyLogo: SeznamLogo,
-		companyColor: '#CC0000',
-		companySite: 'https://o.seznam.cz/',
-		employmentType: 'Full-time',
-		title: 'UI Developer',
-		startDate: '2022-11-14',
-		endDate: '2022-12-31'
+		companyName: 'AiMage.in',
+		companyLogo: AiMageLogo,
+		companyColor: '#3992EE',
+		companySite: 'https://aimage.in',
+		employmentType: 'Internship',
+		title: 'Software Developer',
+		startDate: '2022-04-01',
+		endDate: '2023-01-01'
 	}
 ];
+export const personalProjects = [
+	{
+		title: "Better UTS App",
+		image: UTSClone,
+		url: 'https://github.com/theabhayprajapati/Better-UTS',
+		desription: 'Tried to redeisgn the current URT App'
+	},
+	{
+		title: "Open Apple Store API",
+		image: OAS,
+		url: 'https://oas.vercel.app/',
+		description: 'Open Apple Store has data of almost all Apple Stores Products.'
+	},
+	{
+		title: "Twitter Clone",
+		image: CloneOfTwitter,
+		url: 'https://cloneoftwitter.vercel.app',
+		description: 'A simple twitter Clone build on next.js and tailwindcss'
+	}
+]
 
 export type StackItem = { name: string; icon?: ComponentType; color?: string; url?: string };
 
 export const techStack: Record<string, StackItem[]> = {
-	Design: [
-		{ name: 'UI/UX Design' },
-		{ name: 'Graphic Design' },
-		{ name: 'Design System' },
-		{ name: 'StoryBook' }
-	],
 	Development: [
 		{
 			name: 'Git, GitLab, GitHub',

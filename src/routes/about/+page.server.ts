@@ -2,8 +2,8 @@
   Credits to: https://github.com/leerob/leerob.io
 */
 
-import type { PageServerLoad } from './$types';
 import { getTopTracks } from '$lib/server/spotify';
+import type { PageServerLoad } from './$types';
 
 export const load = (async ({ setHeaders }) => {
 	const { items } = await getTopTracks('short_term');

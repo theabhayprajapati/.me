@@ -2,13 +2,13 @@
   Credits to: https://github.com/leerob/leerob.io
 */
 
-import { URL } from 'url';
-import type { GetAccessTokenRes, GetNowPlayingRes, GetTopTracksResponse } from '$lib/types';
 import {
 	SPOTIFY_CLIENT_ID,
 	SPOTIFY_CLIENT_SECRET,
 	SPOTIFY_REFRESH_TOKEN
 } from '$env/static/private';
+import type { GetAccessTokenRes, GetNowPlayingRes, GetTopTracksResponse } from '$lib/types';
+import { URL } from 'url';
 
 const client_id = SPOTIFY_CLIENT_ID;
 const client_secret = SPOTIFY_CLIENT_SECRET;

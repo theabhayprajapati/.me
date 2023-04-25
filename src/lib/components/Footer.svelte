@@ -7,7 +7,7 @@
 <footer class="mx-auto w-full max-w-screen-sm px-4 pb-12 pt-16">
 	<div class="mx-auto flex flex-col items-center">
 		<span class="text-secondary-300 mb-4 mt-2 text-sm dark:text-zinc-400">
-			© {new Date().getFullYear()} jakubh.com
+			improve version of <a href="https://jakubh.com" target="_blank" rel="noopener noreferrer">jakubh.com</a>
 		</span>
 
 		<Spotify />

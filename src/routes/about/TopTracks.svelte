@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import Headline from '$lib/components/nav/Headline.svelte';
-	import { onMount, onDestroy } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import MusicTrack from './MusicTrack.svelte';
 
 	const PREVIEW_TRACK_COUNT = 3;

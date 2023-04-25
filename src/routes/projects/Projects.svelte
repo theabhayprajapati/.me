@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import Img from '$lib/components/markdown/img.svelte';
 	import Headline from '$lib/components/nav/Headline.svelte';
-	import type { PageData } from './$types';
+	import { personalProjects } from '$lib/constants';
 
-	const { projects } = $page.data as PageData;
+	// const { projects } = $page.data as PageData;
+	const projects = personalProjects
 </script>
 
 <ul class="flex flex-col gap-2">
@@ -12,10 +12,10 @@
 		<li
 			class="h-28 hover:h-52 w-full group relative transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
 		>
-			<a href="/projects/{project.slug}">
+			<a href="{project.url}">
 				<Img
 					alt="{project.title}'s thumbnail"
-					src="/images/projects/{project.slug}/thumbnail.png"
+					src={project.image}
 					class="w-full h-full bg-zinc-100 object-cover dark:bg-zinc-900"
 				/>
 
