@@ -25,7 +25,7 @@ import CloneOfTwitter from '$lib/images/cloneoftwitter.png';
 import OAS from '$lib/images/oas.png';
 import UTSClone from "$lib/images/utsclone.png";
 export const SITE_URL = 'https://abhayprajapati.me';
-export const EMAIL = 'hey@abhayprajapati.me';
+export const EMAIL = 'theabhayprajapati@gmail.com';
 export const PREVIEW_TRACK_COUNT = 3;
 
 
