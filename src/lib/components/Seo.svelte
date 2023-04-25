@@ -2,8 +2,8 @@
 	import { page } from '$app/stores';
 	import { SITE_URL } from '$lib/constants';
 
-	export let title = 'Jakub Habrcetl / Web developer.';
-	export let description = "My name is Jakub Habrcetl. I'm a web developer and graphic designer.";
+	export let title = 'Abhay Prajapati / Software Developer.';
+	export let description = "I'm a software developer based in India. I specialize in designing, building, and sometimes rescuing softwares.";
 	export let image = SITE_URL + '/images/banner.png';
 	export let type = 'website';
 	export let date: string | undefined = undefined;
@@ -16,13 +16,13 @@
 	<meta property="og:url" content="{SITE_URL}{$page.url.pathname}" />
 	<link rel="canonical" href="{SITE_URL}{$page.url.pathname}" />
 	<meta property="og:type" content={type} />
-	<meta property="og:site_name" content="JakubH" />
+	<meta property="og:site_name" content="Abhay" />
 	<meta property="og:description" content={description} />
 	<meta property="og:title" content={title} />
 	<meta property="og:image" content={image} />
-	<meta property="og:image:alt" content="JakubH Banner" />
+	<meta property="og:image:alt" content="Abhay Banner" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@ijakubh" />
+	<meta name="twitter:site" content="@abhayprajapati_" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={image} />

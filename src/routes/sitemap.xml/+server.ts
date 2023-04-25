@@ -1,7 +1,7 @@
 const getSlugFromPath = (path: string) => path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null;
 
 export async function GET() {
-	const DOMAIN = 'https://jakubh.com';
+	const DOMAIN = 'https://abhayprajapati.me';
 	const modules = import.meta.glob(`/src/lib/data/projects/*.{md,svx,svelte.md}`);
 
 	const projects = Object.keys(modules).map((path) => `/projects/${getSlugFromPath(path)}`);

@@ -1,4 +1,4 @@
 User-Agent: *
 
-Host: https://jakubh.com
-Sitemap: https://jakubh.com/sitemap.xml
+Host: https://abhayprajapati.me
+Sitemap: https://abhayprajapati.me/sitemap.xml

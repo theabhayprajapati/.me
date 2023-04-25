@@ -7,8 +7,6 @@
 	<div class="flex flex-row gap-5">
 		<p class="w-full dark:text-zinc-400">
 			Hey 👋, I'm Abhay Prajapati
-			<br />
-
 		</p>
 
 		<div

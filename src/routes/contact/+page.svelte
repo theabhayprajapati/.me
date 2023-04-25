@@ -31,4 +31,4 @@
 	</section>
 </div>
 
-<Seo title="Contact / Jakub Habrcetl" description="This is a place where you can contact me." />
+<Seo title="Contact / Abhay Prajapati" description="This is a place where you can contact me." />

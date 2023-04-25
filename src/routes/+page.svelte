@@ -11,4 +11,4 @@
 	<Contact />
 </div>
 
-<Seo title="Jakub Habrcetl / Web developer & designer" />
+<Seo title="Abhay Prajapati / Software Developer" />

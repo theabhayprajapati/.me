@@ -23,7 +23,7 @@
 	<div class="flex items-center gap-4">
 		<a class="flex items-center" href="/">
 			<div class="text-lg">
-				<span class="font-bold">Abha</span><span>Y</span>
+				<span class="font-bold">Abhay</span><span>P</span>
 			</div>
 		</a>
 		<ThemeSwitcher />

@@ -1,10 +1,10 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import Seo from '$lib/components/Seo.svelte';
+	import Image from '$lib/components/markdown/img.svelte';
 	import clsx from 'clsx';
 	import { format } from 'date-fns';
-	import { page } from '$app/stores';
 	import type { PageData } from './$types';
-	import Image from '$lib/components/markdown/img.svelte';
-	import Seo from '$lib/components/Seo.svelte';
 
 	$: frontmatter = $page.data.frontmatter as PageData['frontmatter'];
 	$: component = $page.data.component as PageData['component'];
@@ -60,4 +60,4 @@
 	<svelte:component this={component} />
 </article>
 
-<Seo title="{frontmatter.title} / Jakub Habrcetl" description={frontmatter.description} />
+<Seo title="{frontmatter.title} / Abhay Prajapati" description={frontmatter.description} />

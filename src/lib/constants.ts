@@ -2,24 +2,18 @@ import type { ComponentType } from 'svelte';
 
 
 import AiMageLogo from '$lib/components/svg/icons/aimagelight.svg';
-import BehanceIcon from '$lib/components/svg/icons/behance.svg?component';
 import CSSIcon from '$lib/components/svg/icons/css.svg?component';
 import FigmaIcon from '$lib/components/svg/icons/figma.svg?component';
 import GitIcon from '$lib/components/svg/icons/git.svg?component';
 import GitHubIcon from '$lib/components/svg/icons/github.svg?component';
 import GraphQLIcon from '$lib/components/svg/icons/graphql.svg?component';
 import HTMLIcon from '$lib/components/svg/icons/html.svg?component';
-import IllustratorIcon from '$lib/components/svg/icons/illustrator.svg?component';
-import InDesignIcon from '$lib/components/svg/icons/indesign.svg?component';
 import JavaScriptIcon from '$lib/components/svg/icons/javascript.svg?component';
 import JestIcon from '$lib/components/svg/icons/jest.svg?component';
 import LinkedInIcon from '$lib/components/svg/icons/linkedin.svg?component';
 import LinuxIcon from '$lib/components/svg/icons/linux.svg?component';
-import NestJSIcon from '$lib/components/svg/icons/nestjs.svg?component';
 import NextJSIcon from '$lib/components/svg/icons/nextjs.svg?component';
 import NodeJSIcon from '$lib/components/svg/icons/nodejs.svg?component';
-import PhotoshopIcon from '$lib/components/svg/icons/photoshop.svg?component';
-import PrismaIcon from '$lib/components/svg/icons/prisma.svg?component';
 import ReactIcon from '$lib/components/svg/icons/react.svg?component';
 import SaladLogo from '$lib/components/svg/icons/saladlogo.svg';
 import SvelteIcon from '$lib/components/svg/icons/svelte.svg?component';
@@ -30,8 +24,8 @@ import VSCIcon from '$lib/components/svg/icons/vsc.svg?component';
 import CloneOfTwitter from '$lib/images/cloneoftwitter.png';
 import OAS from '$lib/images/oas.png';
 import UTSClone from "$lib/images/utsclone.png";
-export const SITE_URL = 'https://jakubh.com';
-export const EMAIL = 'hello@jakubh.com';
+export const SITE_URL = 'https://abhayprajapati.me';
+export const EMAIL = 'hey@abhayprajapati.me';
 export const PREVIEW_TRACK_COUNT = 3;
 
 
@@ -62,7 +56,7 @@ export const personalProjects = [
 		title: "Better UTS App",
 		image: UTSClone,
 		url: 'https://github.com/theabhayprajapati/Better-UTS',
-		desription: 'Tried to redeisgn the current URT App'
+		description: 'Tried to redeisgn the current URT App'
 	},
 	{
 		title: "Open Apple Store API",
@@ -159,23 +153,11 @@ export const techStack: Record<string, StackItem[]> = {
 			url: 'https://nodejs.org/'
 		},
 		{
-			name: 'NestJS',
-			icon: NestJSIcon,
-			color: '#E0234E',
-			url: 'https://nestjs.com/'
-		},
-		{
 			name: 'GraphQL',
 			icon: GraphQLIcon,
 			color: '#E10098',
 			url: 'https://graphql.org/'
 		},
-		{
-			name: 'Prisma',
-			icon: PrismaIcon,
-			color: '#0C344B',
-			url: 'https://www.prisma.io/'
-		}
 	],
 	Tools: [
 		{
@@ -190,24 +172,6 @@ export const techStack: Record<string, StackItem[]> = {
 			color: '#007ACC',
 			url: 'https://code.visualstudio.com/'
 		},
-		{
-			name: 'Adobe Photoshop',
-			icon: PhotoshopIcon,
-			color: '#31A8FF',
-			url: 'https://www.adobe.com/products/photoshop.html'
-		},
-		{
-			name: 'Adobe Illustrator',
-			icon: IllustratorIcon,
-			color: '#FF9A00',
-			url: 'https://www.adobe.com/products/illustrator.html'
-		},
-		{
-			name: 'Adobe InDesign',
-			icon: InDesignIcon,
-			color: '#FF3366',
-			url: 'https://www.adobe.com/products/indesign.html'
-		}
 	]
 };
 
@@ -216,24 +180,18 @@ export const socialMedias = [
 		title: 'GitHub',
 		color: '#4078c0',
 		icon: GitHubIcon,
-		link: 'https://github.com/ivenuss'
+		link: 'https://github.com/theabhayprajapati'
 	},
 	{
 		title: 'LinkedIn',
 		color: '#0077B5',
 		icon: LinkedInIcon,
-		link: 'https://www.linkedin.com/in/jakubhabrcetl'
-	},
-	{
-		title: 'Behance',
-		color: '#053EFF',
-		icon: BehanceIcon,
-		link: 'https://www.behance.net/jakubhabrcetl'
+		link: 'https://www.linkedin.com/in/theabhayprajapati/'
 	},
 	{
 		title: 'Twitter',
 		color: '#1D9BF0',
 		icon: TwitterIcon,
-		link: 'https://twitter.com/ijakubh'
+		link: 'https://twitter.com/abhayprajapati_'
 	}
 ];
