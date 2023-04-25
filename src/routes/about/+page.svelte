@@ -17,6 +17,6 @@
 </div>
 
 <Seo
-	title="About / Jakub Habrcetl"
+	title="About / Abhay Prajapati"
 	description="Who am I & what do I do? Come and get to know me better."
 />

@@ -15,6 +15,6 @@
 <Projects />
 
 <Seo
-	title="Projects / Jakub Habrcetl"
+	title="Projects / Abhay Prajapati"
 	description="I can turn your idea into a fully working project. Here are some examples."
 />

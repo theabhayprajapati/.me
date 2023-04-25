@@ -31,7 +31,7 @@
 		{#each projects as project}
 		<div class="relative">
 			<div
-			  class="bg-cover bg-center h-64 rounded-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105"
+			  class="bg-cover bg-center h-64 rounded-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:border hover:border-slate-100 cursor-pointer"
 			  style="background-image: url('{project.image}')"
 			  on:mouseenter={toggleHover}
 			  on:mouseleave={toggleHover}
