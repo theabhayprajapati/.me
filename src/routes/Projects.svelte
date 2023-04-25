@@ -1,10 +1,8 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import type { PageData } from './$types';
-
+	
 	import Description from '$lib/components/Description.svelte';
 	import Headline from '$lib/components/nav/Headline.svelte';
-  import { personalProjects } from '$lib/constants';
+	import { personalProjects } from '$lib/constants';
 
 	
 	// const data = $page.data as PageData;
@@ -29,7 +27,8 @@
 	<!-- <ul class="flex flex-col gap-2"> -->
 	<ul class="grid md:grid-cols-2 gap-8">
 		{#each projects as project}
-		<div class="relative">
+		<a class="relative"
+		href={project.url}>
 			<div
 			  class="bg-cover bg-center h-64 rounded-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:border hover:border-slate-100 cursor-pointer"
 			  style="background-image: url('{project.image}')"
@@ -47,7 +46,7 @@
 			</div>
 			 
 		  </div>
-		  </div>	
+		  </a>	
 		{/each}
 	</ul>
 	<a href="/projects" class="text-sm text-zinc-500 hover:underline dark:text-zinc-400">

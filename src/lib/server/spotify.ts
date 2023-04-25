@@ -44,7 +44,7 @@ export const getNowPlaying = async (): Promise<GetNowPlayingRes | undefined> => 
 			Authorization: `Bearer ${access_token}`
 		}
 	});
-
+	
 	if (res.status === 204 || res.status > 400) {
 		return undefined;
 	}
