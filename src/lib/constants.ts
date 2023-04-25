@@ -34,7 +34,7 @@ export const workExperiences = [
 		companyName: 'Salad Health | Wellness for Women',
 		companyLogo: SaladLogo,
 		companyColor: '#FFE115',
-		companySite: 'https://www.cdn77.com/',
+		companySite: 'https://saladnewlp.vercel.app/',
 		employmentType: 'Intership',
 		title: 'Frontend Developer',
 		startDate: '2023-01-01',
