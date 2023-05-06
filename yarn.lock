@@ -3260,6 +3260,13 @@ ssri@^9.0.0, ssri@^9.0.1:
   dependencies:
     minipass "^3.1.1"
 
+sswr@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/sswr/-/sswr-1.10.0.tgz#dbf16ca41a3db1c92f003a0dc41df2224f1a1d1c"
+  integrity sha512-nLWAJSQy3h8t7rrbTXanRyVHuQPj4PwKIVGe4IMlxJFdhyaxnN/JGACnvQKGDeWiTGYIZIx/jRuUsPEF0867Pg==
+  dependencies:
+    swrev "^3.0.0"
+
 stackback@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/stackback/-/stackback-0.0.2.tgz#1ac8a0d9483848d1695e418b6d031a3c3ce68e3b"
@@ -3414,6 +3421,11 @@ svgo@^3.0.2:
     css-tree "^2.2.1"
     csso "^5.0.5"
     picocolors "^1.0.0"
+
+swrev@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/swrev/-/swrev-3.0.0.tgz#4b5c0c1a28ef017dd20041c9c2cb24f60d8eca52"
+  integrity sha512-QJuZiptdOmbDY45pECBRVEgnoBlOKjeT2MWVz04wKHpWX15hM3P7EjcIbHDg5yLoPCMQ7to3349MEE+l9QF5HA==
 
 tailwindcss@^3.3.1:
   version "3.3.1"

@@ -2,6 +2,7 @@ import type { ComponentType } from 'svelte';
 
 
 import AiMageLogo from '$lib/components/svg/icons/aimagelight.svg';
+import CalIcon from '$lib/components/svg/icons/calcom.svg?component';
 import CSSIcon from '$lib/components/svg/icons/css.svg?component';
 import FigmaIcon from '$lib/components/svg/icons/figma.svg?component';
 import GitIcon from '$lib/components/svg/icons/git.svg?component';
@@ -193,5 +194,11 @@ export const socialMedias = [
 		color: '#1D9BF0',
 		icon: TwitterIcon,
 		link: 'https://twitter.com/abhayprajapati_'
+	}
+	, {
+		title: 'Cal',
+		color: '#1D9BF0',
+		icon: CalIcon,
+		link: 'https://cal.com/theabhay'
 	}
 ];

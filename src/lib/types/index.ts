@@ -4,7 +4,7 @@ export type NowPlayingSong = {
 	artist: string;
 	isPlaying: boolean;
 	songUrl: string;
-	title: string;
+	title:	 string;
 };
 
 export type TopTrack = {

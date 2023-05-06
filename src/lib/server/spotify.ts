@@ -15,11 +15,11 @@ const client_secret = SPOTIFY_CLIENT_SECRET;
 const refresh_token = SPOTIFY_REFRESH_TOKEN;
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
-const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
-const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
-const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
+export const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
+export const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
+export const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
-const getAccessToken = async (): Promise<GetAccessTokenRes> => {
+export const getAccessToken = async (): Promise<GetAccessTokenRes> => {
 	const response = await fetch(TOKEN_ENDPOINT, {
 		method: 'POST',
 		headers: {
@@ -36,20 +36,28 @@ const getAccessToken = async (): Promise<GetAccessTokenRes> => {
 	return response.json();
 };
 
+
+
+
 export const getNowPlaying = async (): Promise<GetNowPlayingRes | undefined> => {
 	const { access_token } = await getAccessToken();
 
-	const res = await fetch(NOW_PLAYING_ENDPOINT, {
-		headers: {
-			Authorization: `Bearer ${access_token}`
-		}
-	});
-	
-	if (res.status === 204 || res.status > 400) {
-		return undefined;
-	}
+	const fetchData = async () => {
+		const res = await fetch(NOW_PLAYING_ENDPOINT, {
+			headers: {
+				Authorization: `Bearer ${access_token}`
+			}
+		});
 
-	return res.json();
+		if (res.status === 204 || res.status > 400) {
+			return undefined;
+		}
+
+		return res.json();
+	};
+
+	const data = await fetchData();
+	return data;
 };
 
 export const getTopTracks = async (
