@@ -1,4 +1,0 @@
-User-Agent: *
-
-Host: https://abhayprajapati.me
-Sitemap: https://abhayprajapati.me/sitemap.xml
